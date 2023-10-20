@@ -1,7 +1,8 @@
 import mongoose from 'mongoose';
+import bcrypt from 'bcryptjs';
 
-const userSchema = new mongoose.Schema({
-    userName: {
+const userSchema = new mongoose.Schema<any>({
+    name: {
         type: String,
         required: true,
         trim: true,
@@ -28,6 +29,27 @@ const userSchema = new mongoose.Schema({
         default: 'user',
         enum: ['user', 'superUser', 'admin'],
     },
+    avatarUrl: {
+        type: String,
+    },
+    bio: {
+        type: String,
+        required: true,
+        default: '',
+    },
+});
+
+userSchema.pre('save', async function (next) {
+    const thisDocument = this;
+    if (thisDocument.isModified('password')) {
+        thisDocument.password = await bcrypt.hash(thisDocument.password, 8);
+    }
+    next();
+});
+
+userSchema.method('isSamePassword', async function (password) {
+    const thisDocument = this;
+    return await bcrypt.compare(password, thisDocument.password);
 });
 
 export const User = mongoose.model('User', userSchema);
