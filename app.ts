@@ -5,12 +5,12 @@ import cors from 'cors';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
 
-import userRouter from './routes/user.js';
-import actorRouter from './routes/actor.js';
-import movieRouter from './routes/movie.js';
-import reviewRouter from './routes/review.js';
-import superUserRouter from './routes/superUser.js';
-import adminRouter from './routes/admin.js';
+import userRouter from './src/routes/user.js';
+import actorRouter from './src/routes/actor.js';
+import movieRouter from './src/routes/movie.js';
+import reviewRouter from './src/routes/review.js';
+import superUserRouter from './src/routes/superUser.js';
+import adminRouter from './src/routes/admin.js';
 
 const app = express();
 

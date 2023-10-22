@@ -18,7 +18,7 @@ import { router } from '../utils/expressRouter.js';
 
 router.get('/is-auth');
 
-router.post('/create', validateUser, validateResult, createUser);
+router.post('/create-user', validateUser, validateResult, createUser);
 router.post('/sign-in', validateSignIn, validateResult, signIn);
 router.post('/verify-email', verifyEmail);
 router.post('/resend-email-token', resendEmailVerificationToken);
