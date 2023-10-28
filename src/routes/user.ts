@@ -24,7 +24,7 @@ router.post('/verify-email', verifyEmail);
 router.post('/resend-email-token', resendEmailVerificationToken);
 router.post('/forget-password', forgetPassword);
 router.post('/reset-password', validatePassword, validateResult, resetPassword);
-// router.post('/reset-password-token');
+router.post('/verify-reset-pass-token');
 
 router.put('/update/:userId', updateUser);
 router.delete('/delete/:userId', deleteUser);

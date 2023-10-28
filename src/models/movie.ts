@@ -9,15 +9,19 @@ const movieSchema = new mongoose.Schema(
             trim: true,
         },
         releaseYear: {
-            type: Number,
+            type: String,
             required: true,
         },
-        genre: {
+        genres: {
             type: [String],
             required: true,
-            enum: genres,
+            // enum: genres,
         },
-        tag: {
+        type: {
+            type: String,
+            required: true,
+        },
+        tags: {
             type: [String],
             trim: true,
         },
@@ -25,17 +29,21 @@ const movieSchema = new mongoose.Schema(
             type: String,
             trim: true,
         },
-        cast: [
+        actors: [
             {
                 actor: { type: mongoose.Schema.Types.ObjectId, ref: 'Actor' },
                 roleAs: String,
             },
         ],
-        posterUrl: {
-            type: String,
+        poster: {
+            type: Object,
+            url: String,
+            name: String,
         },
-        movieUrl: {
-            type: String,
+        movie: {
+            type: Object,
+            url: String,
+            name: String,
         },
         review: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Review' }],
         description: String,

@@ -1,7 +1,7 @@
 import crypto from 'node:crypto';
 
-export const sendErr = (res: any, err: any, status = 400) => {
-    res.status(status).json({ err });
+export const sendErr = (res: any, error: any, status = 400) => {
+    res.status(status).json({ error });
 };
 
 export const generateRandomBytes = () => {

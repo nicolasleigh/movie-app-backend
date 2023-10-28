@@ -4,6 +4,8 @@ import 'dotenv/config';
 import cors from 'cors';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 import userRouter from './src/routes/user.js';
 import actorRouter from './src/routes/actor.js';
@@ -12,11 +14,17 @@ import reviewRouter from './src/routes/review.js';
 import superUserRouter from './src/routes/superUser.js';
 import adminRouter from './src/routes/admin.js';
 
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
+// console.log(path.join(__dirname, '/src/middleware/uploads'));
+
 const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(morgan('combined'));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static('uploads'));
+app.use(morgan('dev'));
 app.use('/api/user', userRouter);
 app.use('/api/actor', actorRouter);
 app.use('/api/movie', movieRouter);
