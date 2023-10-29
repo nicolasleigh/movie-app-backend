@@ -45,6 +45,10 @@ const movieSchema = new mongoose.Schema(
             url: String,
             name: String,
         },
+        public: {
+            type: Boolean,
+            required: true,
+        },
         review: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Review' }],
         description: String,
     },

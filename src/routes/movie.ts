@@ -1,4 +1,4 @@
-import { createMovie } from '../controllers/movie.js';
+import { createMovie, getLatestMovies } from '../controllers/movie.js';
 import { isAuth } from '../middleware/auth.js';
 import {
     fileSizeErrorHandler,
@@ -6,8 +6,11 @@ import {
     multerErrorHandler,
     posterUpload,
 } from '../middleware/multer.js';
+import { resizePoster } from '../middleware/resize.js';
 import { test } from '../middleware/test.js';
 import { router } from '../utils/expressRouter.js';
+
+router.get('/latest-movies', getLatestMovies);
 
 router.post(
     '/upload-movie',
@@ -22,9 +25,10 @@ router.post(
     '/upload-poster',
     posterUpload.single('poster'),
     multerErrorHandler,
-    (req: any, res: any) => {
-        res.json({ posterName: req.body.posterName });
-    },
+    resizePoster,
+    // (req: any, res: any) => {
+    //     res.json({ posterName: req.body.posterName });
+    // },
     test
 );
 

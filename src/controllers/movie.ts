@@ -25,7 +25,7 @@ export const createMovie = async (req: any, res: any) => {
 
     const newMovie = new Movie({
         title,
-        isPublic,
+        public: isPublic,
         language,
         type,
         genres,
@@ -67,4 +67,18 @@ export const createMovie = async (req: any, res: any) => {
     console.log('newMovie: ', newMovie);
 
     await newMovie.save();
+};
+
+export const getLatestMovies = async (req: any, res: any) => {
+    const { limit = 5 } = req.query;
+    const results = await Movie.find({})
+        .sort('-createdAt')
+        .limit(parseInt(limit));
+
+    res.json({ movies: results });
+    // const movies = results.map((movie) => ({
+    //     id: movie._id,
+    //     title: movie.title,
+    //     description: movie.description,
+    // }));
 };
