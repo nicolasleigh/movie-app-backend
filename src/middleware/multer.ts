@@ -36,6 +36,24 @@ const posterStorage = multer.diskStorage({
     },
 });
 
+const avatarStorage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(
+            null,
+            '/Code/01PersonalProject/MovieApp/Movie-App-Backend/uploads/avatar'
+        );
+        // console.log('req.body: ', req.body);
+        // console.log('file: ', file);
+    },
+    filename: function (req, file, cb) {
+        let extArray = file.mimetype.split('/');
+        let extension = extArray[extArray.length - 1];
+        const fileName = file.fieldname + '-' + Date.now() + '.' + extension;
+        req.body.avatarName = fileName;
+        cb(null, fileName);
+    },
+});
+
 function movieFilter(req: any, file: any, cb: any) {
     if (!file.mimetype.startsWith('video')) {
         return cb('Only support video file!', false);
@@ -44,6 +62,13 @@ function movieFilter(req: any, file: any, cb: any) {
 }
 
 const posterFilter = function (req: any, file: any, cb: any) {
+    if (!file.mimetype.startsWith('image')) {
+        return cb('Only support image file!', false);
+    }
+    cb(null, true);
+};
+
+const avatarFilter = function (req: any, file: any, cb: any) {
     if (!file.mimetype.startsWith('image')) {
         return cb('Only support image file!', false);
     }
@@ -59,6 +84,12 @@ export const movieUpload = multer({
 export const posterUpload = multer({
     storage: posterStorage,
     fileFilter: posterFilter,
+    // limits: { fileSize: maxPosterSize },
+});
+
+export const avatarUpload = multer({
+    storage: avatarStorage,
+    fileFilter: avatarFilter,
     // limits: { fileSize: maxPosterSize },
 });
 

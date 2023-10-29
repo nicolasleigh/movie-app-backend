@@ -8,10 +8,21 @@ const actorSchema = new mongoose.Schema(
             required: true,
             index: true,
         },
-        avatarUrl: {
+        about: {
             type: String,
+            trim: true,
         },
-        movie: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Movie' }],
+        gender: {
+            type: String,
+            trim: true,
+            required: true,
+        },
+        avatar: {
+            type: Object,
+            name: String,
+            url: String,
+            required: true,
+        },
     },
     { timestamps: true }
 );

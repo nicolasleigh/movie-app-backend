@@ -12,3 +12,12 @@ export const generateRandomBytes = () => {
         });
     });
 };
+
+// @ts-ignore
+export const parseActorData = (req, res, next) => {
+    const actorInfo = JSON.parse(req.body.actorInfo);
+    req.body.name = actorInfo.name;
+    req.body.gender = actorInfo.gender;
+    req.body.about = actorInfo.about;
+    next();
+};
