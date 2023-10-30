@@ -37,8 +37,8 @@ const movieSchema = new mongoose.Schema(
         ],
         poster: {
             type: Object,
-            url: String,
-            name: String,
+            url: [String],
+            name: [String],
         },
         movie: {
             type: Object,

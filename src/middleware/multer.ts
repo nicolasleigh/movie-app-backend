@@ -35,6 +35,7 @@ const posterStorage = multer.diskStorage({
         cb(null, fileName);
     },
 });
+// const posterStorage = multer.memoryStorage();
 
 const avatarStorage = multer.diskStorage({
     destination: function (req, file, cb) {

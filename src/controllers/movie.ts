@@ -49,9 +49,15 @@ export const createMovie = async (req: any, res: any) => {
     }
 
     if (poster) {
+        const nameArr: string[] = [];
+        const urlArr: string[] = [];
+        poster.forEach((p: string) => {
+            nameArr.push(p);
+            urlArr.push(String(process.env.POSTER_BASE_URL + p));
+        });
         const posterObj = {
-            name: poster,
-            url: String(process.env.POSTER_BASE_URL + poster),
+            name: nameArr,
+            url: urlArr,
         };
         newMovie.poster = posterObj;
     }
