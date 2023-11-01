@@ -1,22 +1,21 @@
 import test from 'node:test';
-import { createActor } from '../controllers/actor.js';
+import { createActor, searchActor } from '../controllers/actor.js';
 import { avatarUpload, multerErrorHandler } from '../middleware/multer.js';
 import { router } from '../utils/expressRouter.js';
 import { parseActorData } from '../utils/helper.js';
+import { resizeAvatar } from '../middleware/resize.js';
 
 router.get('/actors');
-router.get('/search');
+router.get('/search', searchActor);
 
 // router.post('/upload-avatar');
 router.post(
     '/create-actor',
     avatarUpload.single('avatar'),
     multerErrorHandler,
+    resizeAvatar,
     parseActorData,
-    createActor,
-    (req: any, res: any) => {
-        res.json({ avatarName: req.body.avatarName });
-    }
+    createActor
 );
 
 router.put('/update/:actorId');

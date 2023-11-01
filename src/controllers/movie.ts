@@ -1,4 +1,4 @@
-import { isValidObjectId } from 'mongoose';
+import mongoose, { isValidObjectId } from 'mongoose';
 import { Movie } from '../models/movie.js';
 import { sendErr } from '../utils/helper.js';
 
@@ -42,7 +42,12 @@ export const createMovie = async (req: any, res: any) => {
         newMovie.tags = tags;
     }
     if (actors) {
-        newMovie.actors = actors;
+        console.log('actors: ', actors);
+        const actorsObjId = actors.map(
+            (e: any) => new mongoose.Types.ObjectId(e)
+        );
+        console.log('actorsObjId: ', actorsObjId);
+        newMovie.actors = actorsObjId;
     }
     if (description) {
         newMovie.description = description;
@@ -67,7 +72,7 @@ export const createMovie = async (req: any, res: any) => {
             name: video,
             url: String(process.env.MOVIE_BASE_URL + video),
         };
-        newMovie.movie = videoObj;
+        newMovie.video = videoObj;
     }
 
     console.log('newMovie: ', newMovie);
@@ -81,10 +86,53 @@ export const getLatestMovies = async (req: any, res: any) => {
         .sort('-createdAt')
         .limit(parseInt(limit));
 
-    res.json({ movies: results });
-    // const movies = results.map((movie) => ({
-    //     id: movie._id,
-    //     title: movie.title,
-    //     description: movie.description,
-    // }));
+    const movies = results.map((movie) => ({
+        id: movie._id,
+        title: movie.title,
+        poster: movie.poster.url,
+        // description: movie.description,
+    }));
+    res.json({ movies });
+};
+
+export const getSingleMovie = async (req: any, res: any) => {
+    const { movieId } = req.params;
+
+    const movie = await Movie.findById(movieId).populate('director, actors');
+
+    // const review = getAverageRating(movie._id)
+
+    const {
+        _id: id,
+        title,
+        language,
+        genres,
+        releaseYear,
+        actors,
+        director,
+        type,
+        public: isPublic,
+        description,
+        poster,
+        tags,
+        video,
+    }: any = movie;
+
+    res.json({
+        movie: {
+            id,
+            title,
+            language,
+            genres,
+            releaseYear,
+            actors,
+            director,
+            type,
+            isPublic,
+            description,
+            poster: poster?.url,
+            video: video?.url,
+            tags,
+        },
+    });
 };

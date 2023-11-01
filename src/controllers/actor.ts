@@ -1,4 +1,5 @@
 import { Actor } from '../models/actor.js';
+import { formateActor } from '../utils/helper.js';
 
 //@ts-ignore
 export const createActor = async (req, res, next) => {
@@ -23,5 +24,17 @@ export const createActor = async (req, res, next) => {
     // console.log('newActor: ', newActor);
     await newActor.save();
 
-    next();
+    // next();
+    return res.json({ avatarName });
+};
+
+export const searchActor = async (req: any, res: any) => {
+    const { query } = req;
+    const result = await Actor.find({
+        name: { $regex: query.name, $options: 'i' },
+    });
+
+    const actors = result.map((actor) => formateActor(actor));
+
+    res.json({ results: actors });
 };

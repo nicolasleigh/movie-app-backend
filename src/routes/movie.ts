@@ -1,4 +1,8 @@
-import { createMovie, getLatestMovies } from '../controllers/movie.js';
+import {
+    createMovie,
+    getLatestMovies,
+    getSingleMovie,
+} from '../controllers/movie.js';
 import { isAuth } from '../middleware/auth.js';
 import {
     fileSizeErrorHandler,
@@ -11,6 +15,7 @@ import { test } from '../middleware/test.js';
 import { router } from '../utils/expressRouter.js';
 
 router.get('/latest-movies', getLatestMovies);
+router.get('/single/:movieId', getSingleMovie);
 
 router.post(
     '/upload-movie',

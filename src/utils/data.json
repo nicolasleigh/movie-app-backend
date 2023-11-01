@@ -1,0 +1,1124 @@
+{
+    "films": [
+        {
+            "film_id": 345664,
+            "imdb_id": 4589218,
+            "imdb_title_id": "tt4589218",
+            "film_name": "Five Nights At Freddy's",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-27",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "PG-13 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/pg-13.png",
+                    "age_advisory": "for strong violent content, bloody images and language."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/345664_high_V2.mp4",
+            "synopsis_long": "Can you survive five nights? The terrifying horror game phenomenon becomes a blood-chilling cinematic event, as Blumhouse brings Five Nights at Freddy's to the big screen. The film follows a troubled security guard as he begins working at Freddy Fazbear's Pizza. While spending his first night on the job, he realizes the night shift at Freddy's won't be so easy to make it through.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/345664/345664h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/345664/345664h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 345305,
+            "imdb_id": 5537002,
+            "imdb_title_id": "tt5537002",
+            "film_name": "Killers of the Flower Moon",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-20",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "R ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/r.png",
+                    "age_advisory": "for violence, some grisly images, and language."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/345305_high_V2.mp4",
+            "synopsis_long": "Based on David Grann's broadly lauded best-selling book, \"Killers of the Flower Moon\" is set in 1920s Oklahoma and depicts the serial murder of members of the oil-wealthy Osage Nation, a string of brutal crimes that came to be known as the Reign of Terror.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/345305/345305h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/345305/345305h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 350929,
+            "imdb_id": 21191906,
+            "imdb_title_id": "tt21191906",
+            "film_name": "After Death",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-27",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "PG-13 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/pg-13.png",
+                    "age_advisory": "for thematic material including violent descriptions, some bloody images and drug references."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/350929_high.mp4",
+            "synopsis_long": "After Death is a captivating and thought-provoking documentary that delves into the enigmatic question that has fascinated humanity for centuries: What happens when we die? Through a combination of personal accounts, scientific research, philosophical discussions, and exploration of best-selling stories of near-death experiences, the film takes viewers on a profound journey of discovery.The film examines both the spiritual and scientific dimensions of near-death experiences, inviting viewers to contemplate the possibilities and engage in their own reflections.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/350929/350929h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/350929/350929h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 346513,
+            "imdb_id": 12921446,
+            "imdb_title_id": "tt12921446",
+            "film_name": "The Exorcist: Believer",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-06",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "R ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/r.png",
+                    "age_advisory": "for some violent content, disturbing images, language and sexual references."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/346513_high.mp4",
+            "synopsis_long": "Since the death of his pregnant wife in a Haitian earthquake 12 years ago, Victor Fielding (Tony winner and Oscar nominee Leslie Odom, Jr.; One Night in Miami, Hamilton) has raised their daughter, Angela (Lidya Jewett, Good Girls) on his own. But when Angela and her friend Katherine (newcomer Olivia Marcum), disappear in the woods, only to return three days later with no memory of what happened to them, it unleashes a chain of events that will force Victor to confront the nadir of evil and, in his terror and desperation, seek out the only person alive who has witnessed anything like it before: Chris MacNeil.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/346513/346513h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/346513/346513h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 351048,
+            "imdb_id": null,
+            "imdb_title_id": null,
+            "film_name": "The Nightmare Before Christmas: 30th Anniversary",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-20",
+                    "notes": "Limited"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "PG ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/pg.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "Bored with the same old scare-and-scream routine, Pumpkin King Jack Skellington longs to spread the joy of Christmas. But his merry mission puts Santa in jeopardy and creates a nightmare for good little boys and girls everywhere.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/351048/351048h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 325348,
+            "imdb_id": 15837338,
+            "imdb_title_id": "tt15837338",
+            "film_name": "Paw Patrol: The Mighty Movie",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-09-29",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "PG ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/pg.png",
+                    "age_advisory": "for mild action/peril."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/325348_high.mp4",
+            "synopsis_long": "When a magical meteor crash lands in Adventure City, it gives the PAW Patrol pups superpowers, transforming them into The MIGHTY PUPS! For Skye, the smallest member of the team, her new powers are a dream come true. But things take a turn for the worse when the pups' archrival Humdinger breaks out of jail and teams up with Victoria Vance, a meteor-obsessed mad scientist, to steal the superpowers and turn themselves into supervillains. With the fate of Adventure City hanging in the balance, the Mighty Pups have to stop the supervillains before it's too late, and Skye will need to learn that even the smallest pup can make the biggest difference.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/325348/325348h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/325348/325348h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 348472,
+            "imdb_id": 22041854,
+            "imdb_title_id": "tt22041854",
+            "film_name": "Priscilla",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-27",
+                    "notes": "Limited"
+                },
+                {
+                    "release_date": "2023-11-03",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "R ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/r.png",
+                    "age_advisory": "for drug use and some language."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/348472_high.mp4",
+            "synopsis_long": "When teenage Priscilla Beaulieu meets Elvis Presley at a party, the man who is already a meteoric rock-and-roll superstar becomes someone entirely unexpected in private moments: a thrilling crush, an ally in loneliness, a gentle best friend. Through Priscilla's eyes, Sofia Coppola tells the unseen side of a great American myth in Elvis and Priscilla's long courtship and turbulent marriage, from a German army base to his dream-world estate at Graceland, in this deeply felt and ravishingly detailed portrait of love, fantasy, and fame.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/348472/348472h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/348472/348472h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 343720,
+            "imdb_id": 15744298,
+            "imdb_title_id": "tt15744298",
+            "film_name": "Freelance",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-27",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "R ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/r.png",
+                    "age_advisory": "for violence and language."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/343720_high.mp4",
+            "synopsis_long": "Mason Petit is a former Army Ranger turned family-man whose life is far less exciting than it once was. His perilous globe-trotting days in the military have been replaced by a grinding career as an unsuccessful lawyer and a marriage on the rocks. This all changes when a former military buddy approaches him with a job, working security for the award-winning and fearless journalist Claire Wellington. Wellington has scored a world-first interview with a notorious and eccentric South American dictator, Venegas. Petit jumps at the chance, and hops on a plane without second thought. Upon touchdown Petit's suburban hell turns into a life-or-death nightmare. He is caught up in a violent, orchestrated coup, alone with Wellington, and the morally ambiguous Venegas, to escape the country alive.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/343720/343720h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/343720/343720h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 346874,
+            "imdb_id": 21807222,
+            "imdb_title_id": "tt21807222",
+            "film_name": "Saw X",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-09-29",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "R ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/r.png",
+                    "age_advisory": "for sequences of grisly bloody violence and torture, language and some drug use."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/346874_high.mp4",
+            "synopsis_long": "John Kramer (Tobin Bell) is back. The most chilling installment of the SAW franchise yet explores the untold chapter of Jigsaw's most personal game. Set between the events of SAW I and II, a sick and desperate John travels to Mexico for a risky and experimental medical procedure in hopes of a miracle cure for his cancer - only to discover the entire operation is a scam to defraud the most vulnerable. Armed with a newfound purpose, John returns to his work, turning the tables on the con artists in his signature visceral way through a series of ingenious and terrifying traps.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/346874/346874h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/346874/346874h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 342791,
+            "imdb_id": 14849194,
+            "imdb_title_id": "tt14849194",
+            "film_name": "The Holdovers",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-27",
+                    "notes": "Platform"
+                },
+                {
+                    "release_date": "2023-11-03",
+                    "notes": "Limited"
+                },
+                {
+                    "release_date": "2023-11-17",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "R ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/r.png",
+                    "age_advisory": "for language, some drug use and brief sexual material."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/342791_high.mp4",
+            "synopsis_long": "From acclaimed director Alexander Payne, THE HOLDOVERS follows a curmudgeonly instructor (Paul Giamatti) at an elite New England prep school who is forced to remain on campus during Christmas break to babysit the handful of students with nowhere to go.  Eventually he forms an unlikely bond with one of them -- a damaged, brainy troublemaker (newcomer Dominic Sessa) -- and with the school's head cook, who has just lost a son in Vietnam (Da'Vine Joy Randolph).",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/342791/342791h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/342791/342791h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 334001,
+            "imdb_id": 11858890,
+            "imdb_title_id": "tt11858890",
+            "film_name": "The Creator",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-09-29",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "PG-13 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/pg-13.png",
+                    "age_advisory": "for violence, some bloody images and strong language."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/334001_high_V2.mp4",
+            "synopsis_long": "From writer/director Gareth Edwards (\"Rogue One,\" \"Godzilla\") comes an epic sci-fi action thriller set amidst a future war between the human race and the forces of artificial intelligence. Joshua (John David Washington, \"Tenet\"), a hardened ex-special forces agent grieving the disappearance of his wife (Gemma Chan, \"Eternals\"), is recruited to hunt down and kill the Creator, the elusive architect of advanced AI who has developed a mysterious weapon with the power to end the war - and mankind itself.  Joshua and his team of elite operatives journey across enemy lines, into the dark heart of AI-occupied territory -  only to discover the world-ending weapon he's been instructed to destroy is an AI in the form of a young child (newcomer Madeleine Yuna Voyles).",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/334001/334001h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/334001/334001h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 335907,
+            "imdb_id": 6661616,
+            "imdb_title_id": "tt6661616",
+            "film_name": "Inspector Sun",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-27",
+                    "notes": "Limited"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "PG ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/pg.png",
+                    "age_advisory": "for action and some suggestive material."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/335907_high.mp4",
+            "synopsis_long": "After being fired from his detective job after a mission gone awry, Inspector Sun boards a seemingly normal plane for a much-needed vacation. When Dr. Spindlethorp receives a threat on his life, Sun is back on the case. Trapped in a web of lies, Sun must find his suspect before it's too late.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/335907/335907h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/335907/335907h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 347331,
+            "imdb_id": 16374352,
+            "imdb_title_id": "tt16374352",
+            "film_name": "The Blind",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-09-28",
+                    "notes": "Limited"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "PG-13 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/pg-13.png",
+                    "age_advisory": "for thematic content and smoking."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/347331_high.mp4",
+            "synopsis_long": "Long before Phil Robertson became a reality TV star, he fell in love with Miss Kay and started a family, but his demons threatened to tear their lives apart. Set in the backwoods swamps of 1960s Louisiana, THE BLIND shares never-before-revealed moments in Phil's life as he seeks to conquer the shame of his past, ultimately finding redemption in an unlikely place. This stunning cinematic journey chronicles the love story that launched a dynasty, the turmoil that nearly brought it crashing down, and the hope that rose from the ashes to create a foundation for generations to come.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/347331/347331h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/347331/347331h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 338990,
+            "imdb_id": 22687790,
+            "imdb_title_id": "tt22687790",
+            "film_name": "A Haunting in Venice",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-09-15",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "PG-13 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/pg-13.png",
+                    "age_advisory": "for some strong violence disturbing images and thematic elements."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/338990_high_V2.mp4",
+            "synopsis_long": "\"A Haunting in Venice\" is set in eerie, post-World War II Venice on All Hallows' Eve and is a terrifying mystery featuring the return of the celebrated sleuth, Hercule Poirot. Now retired and living in self-imposed exile in the world's most glamorous city, Poirot reluctantly attends a séance at a decaying, haunted palazzo. When one of the guests is murdered, the detective is thrust into a sinister world of shadows and secrets.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/338990/338990h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/338990/338990h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 336686,
+            "imdb_id": 10160976,
+            "imdb_title_id": "tt10160976",
+            "film_name": "The Nun II",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-09-08",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "R ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/r.png",
+                    "age_advisory": "for violent content and some terror."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/336686_high.mp4",
+            "synopsis_long": "1956  France. A priest is murdered. An evil is spreading. The sequel to the worldwide smash hit follows Sister Irene as she once again comes face-to-face with Valak, the demon nun.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/336686/336686h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/336686/336686h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 349789,
+            "imdb_id": 7130916,
+            "imdb_title_id": "tt7130916",
+            "film_name": "Dicks: The Musical",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-06",
+                    "notes": "Limited"
+                },
+                {
+                    "release_date": "2023-10-20",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "R ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/r.png",
+                    "age_advisory": "for strong crude sexual content, graphic nudity, pervasive language and brief drug use."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/349789_high.mp4",
+            "synopsis_long": "Two self-obsessed businessmen (writers Aaron Jackson &amp; Josh Sharp) discover they're long-lost identical twins and come together to plot the reunion of their eccentric divorced parents, in this riotously funny and depraved musical from comedy icon Larry Charles.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/349789/349789h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/349789/349789h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 341620,
+            "imdb_id": 24076146,
+            "imdb_title_id": "tt24076146",
+            "film_name": "The Persian Version",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-13",
+                    "notes": "Limited"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "R ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/r.png",
+                    "age_advisory": "for language and some sexual references."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/341620_high.mp4",
+            "synopsis_long": "When a large Iranian-American family gathers for the patriarch's heart transplant, a family secret is uncovered that catapults the estranged mother and daughter into an exploration of the past. Toggling between the United States and Iran over decades, mother and daughter discover they are more alike than they know.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/341620/341620h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/341620/341620h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 346029,
+            "imdb_id": 17009710,
+            "imdb_title_id": "tt17009710",
+            "film_name": "Anatomy of a Fall",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-13",
+                    "notes": "Limited"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "R ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/r.png",
+                    "age_advisory": "for some language, sexual references and violent images."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/346029_high.mp4",
+            "synopsis_long": "For the past year, Sandra, her husband Samuel, and their eleven-year-old son Daniel have lived a secluded life in a remote town in the French Alps. When Samuel is found dead in the snow below their chalet, the police question whether he was murdered or committed suicide. Samuel's suspicious death is presumed murder, and Sandra becomes the main suspect. What follows is not just an investigation into the circumstances of Samuel's death but an unsettling psychological journey into the depths of Sandra and Samuel's conflicted relationship.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/346029/346029h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/346029/346029h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 331707,
+            "imdb_id": 17024450,
+            "imdb_title_id": "tt17024450",
+            "film_name": "The Equalizer 3",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-09-01",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "R ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/r.png",
+                    "age_advisory": "for strong bloody violence and some language."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/331707_high.mp4",
+            "synopsis_long": "Since giving up his life as a government assassin, Robert McCall (Denzel Washington) has struggled to reconcile the horrific things he's done in the past and finds a strange solace in serving justice on behalf of the oppressed. Finding himself surprisingly at home in Southern Italy, he discovers his new friends are under the control of local crime bosses. As events turn deadly, McCall knows what he has to do: become his friends' protector by taking on the mafia.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/331707/331707h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/331707/331707h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 351273,
+            "imdb_id": null,
+            "imdb_title_id": null,
+            "film_name": "Hocus Pocus 30th Anniversary",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-06",
+                    "notes": "Limited"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "PG ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/pg.png",
+                    "age_advisory": "for some scary sequences, and for language"
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "For 30 years the Sanderson Sisters have been casting spells, now see them back on the big screen for a limited time as we celebrate the 30th Anniversary of Hocus Pocus! Conjured up by some unsuspecting pranksters, a tricky trio of 300-year-old witches set out to cast a spell on the town and reclaim their youth. But first, they must get their act together and outwit three kids and a talking cat.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/351273/351273h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/351273/351273h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 349521,
+            "imdb_id": 15654328,
+            "imdb_title_id": "tt15654328",
+            "film_name": "LEO: Bloody Sweet (Tamil)",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-18",
+                    "notes": "Limited"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "0 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/uc.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "A mild-mannered café owner becomes a local hero through an act of violence, which sets off repercussions with connections to an old life he left behind, shaking his newly constructed life to its very core.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/349521/349521h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 215333,
+            "imdb_id": 1517268,
+            "imdb_title_id": "tt1517268",
+            "film_name": "Barbie",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-07-21",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "PG-13 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/pg-13.png",
+                    "age_advisory": "for suggestive references and some language."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/215333_high_V3.mp4",
+            "synopsis_long": "To live in Barbie Land is to be a perfect being in a perfect place. Unless you have a full-on existential crisis. Or you're a Ken.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/215333/215333h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/215333/215333h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 341654,
+            "imdb_id": 15444046,
+            "imdb_title_id": "tt15444046",
+            "film_name": "Divinity",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-13",
+                    "notes": "Limited"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "0 ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/uc.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": null,
+            "synopsis_long": "Two mysterious brothers abduct a mogul during his quest for immortality. Meanwhile, a seductive woman helps them launch a journey of self-discovery.",
+            "images": {
+                "poster": []
+            }
+        },
+        {
+            "film_id": 344719,
+            "imdb_id": 13957560,
+            "imdb_title_id": "tt13957560",
+            "film_name": "Dumb Money",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-09-15",
+                    "notes": "NY/LA"
+                },
+                {
+                    "release_date": "2023-09-22",
+                    "notes": "Limited"
+                },
+                {
+                    "release_date": "2023-09-29",
+                    "notes": "Nationwide"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "R ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/r.png",
+                    "age_advisory": ""
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/344719_high.mp4",
+            "synopsis_long": "Dumb Money is the ultimate David vs. Goliath tale, based on the insane true story of everyday people who flipped the script on Wall Street and got rich by turning GameStop (yes, the mall videogame store) into the world's hottest company. In the middle of everything is regular guy Keith Gill (Paul Dano), who starts it all by sinking his life savings into the stock and posting about it. When his social posts start blowing up, so does his life and the lives of everyone following him. As a stock tip becomes a movement, everyone gets rich - until the billionaires fight back, and both sides find their worlds turned upside down.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/344719/344719h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/344719/344719h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "film_id": 343721,
+            "imdb_id": 1136617,
+            "imdb_title_id": "tt1136617",
+            "film_name": "The Killer",
+            "other_titles": null,
+            "release_dates": [
+                {
+                    "release_date": "2023-10-27",
+                    "notes": "Platform"
+                }
+            ],
+            "age_rating": [
+                {
+                    "rating": "R ",
+                    "age_rating_image": "https://assets.movieglu.com/age_rating_logos/us/r.png",
+                    "age_advisory": "for strong violence, language and brief sexuality."
+                }
+            ],
+            "film_trailer": "https://trailer.movieglu.com/343721_high.mp4",
+            "synopsis_long": "After a fateful near-miss an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
+            "images": {
+                "poster": {
+                    "1": {
+                        "image_orientation": "portrait",
+                        "region": "global",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/343721/343721h1.jpg",
+                            "width": 200,
+                            "height": 300
+                        }
+                    }
+                },
+                "still": {
+                    "1": {
+                        "image_orientation": "landscape",
+                        "medium": {
+                            "film_image": "https://image.movieglu.com/343721/343721h2.jpg",
+                            "width": 300,
+                            "height": 200
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "status": {
+        "count": 25,
+        "state": "OK",
+        "method": "filmsNowShowing",
+        "message": null,
+        "request_method": "GET",
+        "version": "BERNv200",
+        "territory": "US",
+        "device_datetime_sent": "2023-10-31T11:12:37.545Z",
+        "device_datetime_used": "2023-10-31 11:12:37"
+    }
+}

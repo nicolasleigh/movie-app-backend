@@ -29,18 +29,13 @@ const movieSchema = new mongoose.Schema(
             type: String,
             trim: true,
         },
-        actors: [
-            {
-                actor: { type: mongoose.Schema.Types.ObjectId, ref: 'Actor' },
-                roleAs: String,
-            },
-        ],
+        actors: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Actor' }],
         poster: {
             type: Object,
             url: [String],
             name: [String],
         },
-        movie: {
+        video: {
             type: Object,
             url: String,
             name: String,

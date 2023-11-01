@@ -21,3 +21,16 @@ export const parseActorData = (req, res, next) => {
     req.body.about = actorInfo.about;
     next();
 };
+
+export const formateActor = (actor: any) => {
+    const { name, gender, about, _id, avatar } = actor;
+    return {
+        id: _id,
+        name,
+        about,
+        gender,
+        avatar: avatar?.url,
+    };
+};
+
+

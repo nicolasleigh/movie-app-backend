@@ -131,3 +131,4 @@ dist
 
 # multer folder
 /uploads
+/downloads
