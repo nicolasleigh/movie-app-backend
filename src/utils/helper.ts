@@ -33,4 +33,14 @@ export const formateActor = (actor: any) => {
     };
 };
 
+export const formatMovie = (movie: any) => {
+    const { title, _id } = movie;
+    return {
+        id: _id,
+        title,
+    };
+};
 
+export const handleNotFound = (req: any, res: any) => {
+    sendErr(res, 'Not Found!', 404);
+};

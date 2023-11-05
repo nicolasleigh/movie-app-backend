@@ -6,7 +6,7 @@ import { parseActorData } from '../utils/helper.js';
 import { resizeAvatar } from '../middleware/resize.js';
 
 router.get('/actors');
-router.get('/search', searchActor);
+router.get('/search-actor', searchActor);
 
 // router.post('/upload-avatar');
 router.post(

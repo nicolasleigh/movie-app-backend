@@ -1,22 +1,20 @@
 import mongoose, { isValidObjectId } from 'mongoose';
 import { Movie } from '../models/movie.js';
-import { sendErr } from '../utils/helper.js';
+import { formatMovie, sendErr } from '../utils/helper.js';
 
 export const createMovie = async (req: any, res: any) => {
     const { file, body } = req;
     // console.log('file: ', file);
-    // console.log('body: ', body);
     let {
         title,
-        description,
+        desc,
         tags,
         director,
-        actors,
+        actor,
         releaseYear,
-        public: isPublic,
         language,
         type,
-        genres,
+        genre,
         poster,
         video,
     } = body;
@@ -25,10 +23,9 @@ export const createMovie = async (req: any, res: any) => {
 
     const newMovie = new Movie({
         title,
-        public: isPublic,
-        language,
-        type,
-        genres,
+        language: language.value,
+        type: type.value,
+        genres: genre.value,
         releaseYear,
     });
 
@@ -41,16 +38,16 @@ export const createMovie = async (req: any, res: any) => {
     if (tags) {
         newMovie.tags = tags;
     }
-    if (actors) {
-        console.log('actors: ', actors);
-        const actorsObjId = actors.map(
-            (e: any) => new mongoose.Types.ObjectId(e)
+    if (actor) {
+        // console.log('actors: ', actors);
+        const actorsObjId = actor.map(
+            (e: any) => new mongoose.Types.ObjectId(e.id)
         );
-        console.log('actorsObjId: ', actorsObjId);
+        // console.log('actorsObjId: ', actorsObjId);
         newMovie.actors = actorsObjId;
     }
-    if (description) {
-        newMovie.description = description;
+    if (desc) {
+        newMovie.description = desc;
     }
 
     if (poster) {
@@ -75,9 +72,10 @@ export const createMovie = async (req: any, res: any) => {
         newMovie.video = videoObj;
     }
 
-    console.log('newMovie: ', newMovie);
+    // console.log('newMovie: ', newMovie);
 
     await newMovie.save();
+    res.json({ movie: newMovie });
 };
 
 export const getLatestMovies = async (req: any, res: any) => {
@@ -98,7 +96,7 @@ export const getLatestMovies = async (req: any, res: any) => {
 export const getSingleMovie = async (req: any, res: any) => {
     const { movieId } = req.params;
 
-    const movie = await Movie.findById(movieId).populate('director, actors');
+    const movie = await Movie.findById(movieId).populate('actors');
 
     // const review = getAverageRating(movie._id)
 
@@ -109,9 +107,7 @@ export const getSingleMovie = async (req: any, res: any) => {
         genres,
         releaseYear,
         actors,
-        director,
         type,
-        public: isPublic,
         description,
         poster,
         tags,
@@ -126,13 +122,25 @@ export const getSingleMovie = async (req: any, res: any) => {
             genres,
             releaseYear,
             actors,
-            director,
             type,
-            isPublic,
             description,
             poster: poster?.url,
             video: video?.url,
             tags,
         },
     });
+};
+
+export const searchMovieByTitle = async (req: any, res: any) => {
+    const { title } = req.query;
+
+    if (!title) return sendErr(res, 'Invalid requests!');
+
+    const result = await Movie.find({
+        title: { $regex: title, $options: 'i' },
+    });
+
+    const movies = result.map((movie) => formatMovie(movie));
+
+    res.json({ results: movies });
 };

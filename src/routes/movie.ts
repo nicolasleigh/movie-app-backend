@@ -2,6 +2,7 @@ import {
     createMovie,
     getLatestMovies,
     getSingleMovie,
+    searchMovieByTitle,
 } from '../controllers/movie.js';
 import { isAuth } from '../middleware/auth.js';
 import {
@@ -16,6 +17,7 @@ import { router } from '../utils/expressRouter.js';
 
 router.get('/latest-movies', getLatestMovies);
 router.get('/single/:movieId', getSingleMovie);
+router.get('/search-movie', searchMovieByTitle);
 
 router.post(
     '/upload-movie',
@@ -36,6 +38,8 @@ router.post(
     // },
     test
 );
+
+router.post('/upload-movie-and-poster')
 
 router.post('/create-movie', createMovie);
 export default router;

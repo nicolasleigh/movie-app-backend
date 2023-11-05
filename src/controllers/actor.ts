@@ -1,5 +1,5 @@
 import { Actor } from '../models/actor.js';
-import { formateActor } from '../utils/helper.js';
+import { formateActor, sendErr } from '../utils/helper.js';
 
 //@ts-ignore
 export const createActor = async (req, res, next) => {
@@ -29,9 +29,10 @@ export const createActor = async (req, res, next) => {
 };
 
 export const searchActor = async (req: any, res: any) => {
-    const { query } = req;
+    const { name } = req.query;
+    if (!name) return sendErr(res, 'Invalid requests!!');
     const result = await Actor.find({
-        name: { $regex: query.name, $options: 'i' },
+        name: { $regex: name, $options: 'i' },
     });
 
     const actors = result.map((actor) => formateActor(actor));

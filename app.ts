@@ -13,6 +13,7 @@ import movieRouter from './src/routes/movie.js';
 import reviewRouter from './src/routes/review.js';
 import superUserRouter from './src/routes/superUser.js';
 import adminRouter from './src/routes/admin.js';
+import { handleNotFound } from './src/utils/helper.js';
 
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = path.dirname(__filename);
@@ -31,6 +32,7 @@ app.use('/api/movie', movieRouter);
 app.use('/api/review', reviewRouter);
 app.use('/api/super-user', superUserRouter);
 app.use('/api/admin', adminRouter);
+app.use('/*', handleNotFound);
 
 mongoose
     .connect(process.env.MONGO_URI as string)

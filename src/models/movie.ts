@@ -7,6 +7,7 @@ const movieSchema = new mongoose.Schema(
             type: String,
             required: true,
             trim: true,
+            index: true,
         },
         releaseYear: {
             type: String,
@@ -40,8 +41,9 @@ const movieSchema = new mongoose.Schema(
             url: String,
             name: String,
         },
-        public: {
+        isPublic: {
             type: Boolean,
+            default: true,
             required: true,
         },
         review: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Review' }],
