@@ -1,5 +1,6 @@
 import multer, { MulterError } from 'multer';
 import { sendErr } from '../utils/helper.js';
+import { v4 as uuidv4 } from 'uuid';
 
 const maxMovieSize = 629145600; // 600MB
 const maxPosterSize = 5242880; // 5MB
@@ -55,6 +56,35 @@ const avatarStorage = multer.diskStorage({
     },
 });
 
+const movieAndPosterStorage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        if (file.fieldname === 'poster') {
+            cb(
+                null,
+                '/Code/01PersonalProject/MovieApp/Movie-App-Backend/uploads/poster'
+            );
+        } else {
+            cb(
+                null,
+                '/Code/01PersonalProject/MovieApp/Movie-App-Backend/uploads/video'
+            );
+        }
+        // console.log('req.body: ', req.body);
+        // console.log('file: ', file);
+    },
+    filename: function (req, file, cb) {
+        let extArray = file.mimetype.split('/');
+        let extension = extArray[extArray.length - 1];
+        const fileName = file.fieldname + '-' + uuidv4() + '.' + extension;
+        if (file.mimetype.startsWith('image')) {
+            req.body.posterName = fileName;
+        } else if (file.mimetype.startsWith('video')) {
+            req.body.videoName = fileName;
+        }
+        cb(null, fileName);
+    },
+});
+
 function movieFilter(req: any, file: any, cb: any) {
     if (!file.mimetype.startsWith('video')) {
         return cb('Only support video file!', false);
@@ -76,6 +106,26 @@ const avatarFilter = function (req: any, file: any, cb: any) {
     cb(null, true);
 };
 
+const movieAndPosterFilter = (req, file, cb) => {
+    if (file.fieldname === 'poster') {
+        if (
+            file.mimetype === 'image/png' ||
+            file.mimetype === 'image/jpg' ||
+            file.mimetype === 'image/jpeg'
+        ) {
+            cb(null, true);
+        } else {
+            cb(null, false);
+        }
+    } else {
+        if (file.mimetype.startsWith('video')) {
+            cb(null, true);
+        } else {
+            cb(null, false);
+        }
+    }
+};
+
 export const movieUpload = multer({
     storage: movieStorage,
     fileFilter: movieFilter,
@@ -92,6 +142,11 @@ export const avatarUpload = multer({
     storage: avatarStorage,
     fileFilter: avatarFilter,
     // limits: { fileSize: maxPosterSize },
+});
+
+export const movieAndPosterUpload = multer({
+    storage: movieAndPosterStorage,
+    fileFilter: movieAndPosterFilter,
 });
 
 // @ts-ignore

@@ -144,3 +144,9 @@ export const searchMovieByTitle = async (req: any, res: any) => {
 
     res.json({ results: movies });
 };
+
+export const uploadMovieAndPoster = async (req: any, res: any) => {
+    // console.log('req.file:', req.file);
+    // console.log('req.files:', req.files);
+    return res.json({ message: 'ok' });
+};

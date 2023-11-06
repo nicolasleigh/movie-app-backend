@@ -3,10 +3,12 @@ import {
     getLatestMovies,
     getSingleMovie,
     searchMovieByTitle,
+    uploadMovieAndPoster,
 } from '../controllers/movie.js';
 import { isAuth } from '../middleware/auth.js';
 import {
     fileSizeErrorHandler,
+    movieAndPosterUpload,
     movieUpload,
     multerErrorHandler,
     posterUpload,
@@ -39,7 +41,15 @@ router.post(
     test
 );
 
-router.post('/upload-movie-and-poster')
+router.post(
+    '/upload-movie-and-poster',
+    movieAndPosterUpload.fields([
+        { name: 'poster', maxCount: 1 },
+        { name: 'video', maxCount: 1 },
+    ]),
+    resizePoster,
+    uploadMovieAndPoster
+);
 
 router.post('/create-movie', createMovie);
 export default router;

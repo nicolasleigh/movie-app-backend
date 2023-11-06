@@ -4,8 +4,6 @@ import 'dotenv/config';
 import cors from 'cors';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
-import path from 'path';
-import { fileURLToPath } from 'url';
 
 import userRouter from './src/routes/user.js';
 import actorRouter from './src/routes/actor.js';

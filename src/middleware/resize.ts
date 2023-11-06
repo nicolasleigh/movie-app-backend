@@ -1,26 +1,34 @@
 import sharp from 'sharp';
 import fs from 'node:fs';
 
+// sharp can't have same input and output filename, so load to buffer then
+// write to disk after resize is complete
 // @ts-ignore
 export const resizePoster = async (req, res, next) => {
-    const sizeX = [1080, 720, 480];
-    const sizeY = [720, 480, 360];
+    // sharp.cache(false);
+    const sizeX = [200];
+    const sizeY = [300];
     let fileName = '';
     let resizedImg = [];
     for (let i in sizeX) {
-        fileName = sizeX[i] + 'w' + '-' + req.body.posterName;
+        fileName = req.body.posterName;
         resizedImg.push(fileName);
-        await sharp(req.file.path)
+        const buffer = await sharp(req.files.poster[0].path)
             .resize(sizeX[i], sizeY[i], {
                 fit: 'fill',
                 position: sharp.gravity.center,
             })
-            .toFile(
-                '/Code/01PersonalProject/MovieApp/Movie-App-Backend/uploads/poster/' +
-                    fileName
-            );
+            .toBuffer();
+        fs.writeFile(
+            '/Code/01PersonalProject/MovieApp/Movie-App-Backend/uploads/poster/' +
+                fileName,
+            buffer,
+            (err) => {
+                if (err) throw err;
+                console.log('The file has been saved!');
+            }
+        );
     }
-    fs.unlinkSync(req.file.path);
     return res.json({ posterName: resizedImg });
 };
 
