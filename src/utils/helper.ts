@@ -22,6 +22,18 @@ export const parseActorData = (req, res, next) => {
     next();
 };
 
+// @ts-ignore
+export const parseMovieData = (req, res, next) => {
+    console.log('req.body:', req.body);
+    // const movieTitle = JSON.parse(req.body.movieTitle);
+    // req.body.movieId = movieTitle.id;
+
+    // req.body.name = actorInfo.name;
+    // req.body.gender = actorInfo.gender;
+    // req.body.about = actorInfo.about;
+    next();
+};
+
 export const formateActor = (actor: any) => {
     const { name, gender, about, _id, avatar } = actor;
     return {

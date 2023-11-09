@@ -33,12 +33,13 @@ const movieSchema = new mongoose.Schema(
         actors: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Actor' }],
         poster: {
             type: Object,
-            url: [String],
-            name: [String],
+            name: String,
+            // url: [String],
+            // name: [String],
         },
         video: {
             type: Object,
-            url: String,
+            // url: String,
             name: String,
         },
         isPublic: {

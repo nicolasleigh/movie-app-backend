@@ -29,7 +29,8 @@ export const resizePoster = async (req, res, next) => {
             }
         );
     }
-    return res.json({ posterName: resizedImg });
+    next();
+    // return res.json({ posterName: resizedImg });
 };
 
 // @ts-ignore

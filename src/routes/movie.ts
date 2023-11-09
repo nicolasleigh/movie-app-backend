@@ -16,6 +16,7 @@ import {
 import { resizePoster } from '../middleware/resize.js';
 import { test } from '../middleware/test.js';
 import { router } from '../utils/expressRouter.js';
+import { parseMovieData } from '../utils/helper.js';
 
 router.get('/latest-movies', getLatestMovies);
 router.get('/single/:movieId', getSingleMovie);
@@ -48,6 +49,7 @@ router.post(
         { name: 'video', maxCount: 1 },
     ]),
     resizePoster,
+    parseMovieData,
     uploadMovieAndPoster
 );
 
