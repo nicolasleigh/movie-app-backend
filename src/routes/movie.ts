@@ -15,6 +15,7 @@ import {
 } from '../middleware/multer.js';
 import { resizePoster } from '../middleware/resize.js';
 import { test } from '../middleware/test.js';
+import { transcode } from '../middleware/transcode.js';
 import { router } from '../utils/expressRouter.js';
 import { parseMovieData } from '../utils/helper.js';
 
@@ -48,6 +49,7 @@ router.post(
         { name: 'poster', maxCount: 1 },
         { name: 'video', maxCount: 1 },
     ]),
+    transcode,
     resizePoster,
     parseMovieData,
     uploadMovieAndPoster
