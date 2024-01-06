@@ -1,0 +1,5 @@
+solution for unknown .ts 
+node --loader ts-node/esm {file}  
+
+
+

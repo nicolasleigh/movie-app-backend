@@ -10,12 +10,12 @@ router.get('/search-actor', searchActor);
 
 // router.post('/upload-avatar');
 router.post(
-    '/create-actor',
-    avatarUpload.single('avatar'),
-    multerErrorHandler,
-    resizeAvatar,
-    parseActorData,
-    createActor
+  '/create-actor',
+  avatarUpload.single('avatar'),
+  // multerErrorHandler,
+  //   resizeAvatar,
+  parseActorData,
+  createActor
 );
 
 router.put('/update/:actorId');
