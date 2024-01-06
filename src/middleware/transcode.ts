@@ -1,6 +1,12 @@
 import fs from 'node:fs';
 import ffmpeg from 'fluent-ffmpeg';
 import shell from 'shelljs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 // import ffmpegInstaller from '@ffmpeg-installer/ffmpeg';
 
 // console.log('ffmpegInstaller.path:', ffmpegInstaller.path);
@@ -8,10 +14,10 @@ import shell from 'shelljs';
 
 // ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 // ffmpeg.setFfmpegPath('D:\\Program Files\\ffmpeg\\bin\\ffmpeg.exe');
-ffmpeg.setFfmpegPath('');
+ffmpeg.setFfmpegPath('/opt/homebrew/bin/ffmpeg');
 
 export const transcode = (req: any, res: any, next: any) => {
-  const uploadVideoPath = '../../uploads/movie/';
+  const uploadVideoPath = path.join(__dirname, '../..', '/uploads/movie/');
 
   const videoName = req.body.videoName;
   const inputPath = uploadVideoPath + videoName;
@@ -36,12 +42,12 @@ export const transcode = (req: any, res: any, next: any) => {
 -filter_complex \
 "[0:v]split=2[v1][v2]; \
 [v1]scale=w=1280:h=720[v1out]; [v2]scale=w=640:h=360[v2out]" \
--map [v1out] -c:v:0 libx264 -x264-params "nal-hrd=cbr:force-cfr=1" -b:v:0 2800k -maxrate:v:0 2996k  -bufsize:v:0 4200k -preset slow -g 48 -sc_threshold 0 -keyint_min 48 \
--map [v2out] -c:v:1 libx264 -x264-params "nal-hrd=cbr:force-cfr=1" -b:v:1 800k -maxrate:v:1 856k  -bufsize:v:1 1200k -preset slow -g 48 -sc_threshold 0 -keyint_min 48 \
+-map [v1out] -c:v:0 libx264 -x264-params "nal-hrd=cbr:force-cfr=1" -b:v:0 1500k -maxrate:v:0 2000k  -bufsize:v:0 3000k -preset slow -g 48 -sc_threshold 0 -keyint_min 48 \
+-map [v2out] -c:v:1 libx264 -x264-params "nal-hrd=cbr:force-cfr=1" -b:v:1 400k -maxrate:v:1 600k  -bufsize:v:1 800k -preset slow -g 48 -sc_threshold 0 -keyint_min 48 \
 -map a:0 -c:a:0 aac -b:a:0 96k -ac 2 \
 -map a:0 -c:a:1 aac -b:a:1 48k -ac 2 \
 -f hls \
--hls_time 6 \
+-hls_time 10 \
 -hls_playlist_type vod \
 -hls_flags independent_segments \
 -hls_segment_type mpegts \
@@ -91,4 +97,6 @@ export const transcode = (req: any, res: any, next: any) => {
   //         next();
   //     })
   //     .run();
+
+  next();
 };

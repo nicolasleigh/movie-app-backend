@@ -1,5 +1,10 @@
 import sharp from 'sharp';
 import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // sharp can't have same input and output filename, so load to buffer then
 // write to disk after resize is complete
@@ -19,10 +24,14 @@ export const resizePoster = async (req, res, next) => {
         position: sharp.gravity.center,
       })
       .toBuffer();
-    fs.writeFile('../../uploads/poster/' + fileName, buffer, (err) => {
-      if (err) throw err;
-      console.log('The file has been saved!');
-    });
+    fs.writeFile(
+      path.join(__dirname, '../..', '/uploads/poster/') + fileName,
+      buffer,
+      (err) => {
+        if (err) throw err;
+        console.log('The file has been saved!');
+      }
+    );
   }
   next();
   // return res.json({ posterName: resizedImg });

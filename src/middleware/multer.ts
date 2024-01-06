@@ -12,7 +12,7 @@ const maxPosterSize = 5242880; // 5MB
 
 const movieStorage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, '../../uploads/movie');
+    cb(null, path.join(__dirname, '../..', '/uploads/movie'));
   },
   filename: function (req, file, cb) {
     let extArray = file.mimetype.split('/');
@@ -25,7 +25,7 @@ const movieStorage = multer.diskStorage({
 
 const posterStorage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, '../../uploads/poster');
+    cb(null, path.join(__dirname, '../..', '/uploads/poster'));
   },
   filename: function (req, file, cb) {
     let extArray = file.mimetype.split('/');
@@ -56,9 +56,9 @@ const avatarStorage = multer.diskStorage({
 const movieAndPosterStorage = multer.diskStorage({
   destination: function (req, file, cb) {
     if (file.fieldname === 'poster') {
-      cb(null, '../../uploads/poster');
+      cb(null, path.join(__dirname, '../..', '/uploads/poster'));
     } else {
-      cb(null, '../../uploads/movie');
+      cb(null, path.join(__dirname, '../..', '/uploads/movie'));
     }
     // console.log('req.body: ', req.body);
     // console.log('file: ', file);
