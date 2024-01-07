@@ -79,7 +79,7 @@ export const createMovie = async (req: any, res: any) => {
 };
 
 export const getLatestMovies = async (req: any, res: any) => {
-  const { limit = 5 } = req.query;
+  const { limit = 20 } = req.query;
   const results = await Movie.find({})
     .sort('-createdAt')
     .limit(parseInt(limit));
@@ -87,7 +87,7 @@ export const getLatestMovies = async (req: any, res: any) => {
   const movies = results.map((movie) => ({
     id: movie._id,
     title: movie.title,
-    poster: movie.poster.url,
+    poster: movie.poster.name,
     // description: movie.description,
   }));
   res.json({ movies });
@@ -99,8 +99,8 @@ export const getSingleMovie = async (req: any, res: any) => {
     return res.status(404).json({ error: 'Invalid Id' });
   // if (!isValidObjectId(movieId)) return sendErr(res, 'Invalid Id!', 404);
 
-  const movie = await Movie.findById(movieId);
-  // const movie = await Movie.findById(movieId).populate('actors');
+  // const movie = await Movie.findById(movieId);
+  const movie = await Movie.findById(movieId).populate('actors');
 
   // const review = getAverageRating(movie._id)
 

@@ -38,7 +38,8 @@ export const transcode = (req: any, res: any, next: any) => {
     fs.mkdirSync(dir);
   }
 
-  shell.exec(`ffmpeg -i ${inputPath} \
+  shell.exec(
+    `ffmpeg -i ${inputPath} \
 -filter_complex \
 "[0:v]split=2[v1][v2]; \
 [v1]scale=w=1280:h=720[v1out]; [v2]scale=w=640:h=360[v2out]" \
@@ -53,7 +54,9 @@ export const transcode = (req: any, res: any, next: any) => {
 -hls_segment_type mpegts \
 -hls_segment_filename ${outputPath + name + '/'}%v_data%03d.ts \
 -master_pl_name master.m3u8 \
--var_stream_map "v:0,a:0 v:1,a:1" ${outputPath + name + '/'}%v.m3u8`);
+-var_stream_map "v:0,a:0 v:1,a:1" ${outputPath + name + '/'}%v.m3u8`,
+    { async: true }
+  );
 
   // ffmpeg(inputPath)
   //     .output(dir720p + 'output.m3u8')
